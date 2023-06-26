@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro</title>
+</head>
+<body>
+  <h1>Cadastro</h1>
+  <form name="cadastro" action="#" method="post">
+    <p><strong>Nome Completo:</strong> <input type="text" name="nome" required></p>
+    <small><strong><em>Digite seu nome completo sem abreviações.</em></strong></small>
+    <p><strong>Email:</strong> <input type="email" name="email" required></p>
+    <small><strong><em>Digite um endereço de email válido.</em></strong></small>
+    <p><strong>Senha:</strong> <input type="password" name="senha" required></p>
+    <small><strong><em>Digite uma senha forte e segura.</em></strong></small>
+    <p><strong>Idade:</strong> <input type="number" name="idade" min="0" max="120" required></p>
+    <small><strong><em>Digite sua idade em anos.</em></strong></small>
+    <p><strong>Gênero:</strong> 
+      <select name="genero" required>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option>
+      </select>
+      Se outro, especifique: <input type="text" name="outro_genero">
+    </p>
+    <small><strong><em>Escolha uma opção que melhor se identifique com seu gênero. Se escolher outro, digite sua identidade de gênero no campo ao lado.</em></strong></small>
+    <p><strong>Data de nascimento:</strong> <input type="date" name="nascimento" required></p>
+    <small><strong><em>Digite sua data de nascimento no formato dd/mm/aaaa.</em></strong></small>
+    <p><strong>Telefone:</strong> <input type="tel" name="telefone" pattern="\+55[0-9]{11}" required></p>
+    <small><strong><em>Digite seu número de telefone com o código do país (+55) e o DDD sem o zero. Exemplo: +5511999999999</em></strong></small>
+    <p><strong>URL da Foto:</strong> <input type="url" name="foto"></p>
+    <small><strong><em>Digite a URL de uma foto sua que esteja hospedada na internet. Exemplo: https://exemplo.com/foto.jpg</em></strong></small>
+    <p><strong>Digitar CPF:</strong> <input type="text" name="cpf" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" required></p>
+    <small><strong><em>Digite seu CPF com os pontos e o traço. Exemplo: 123.456.789-00</em></strong></small>
+    <p><strong>Frente do RG:</strong> 
+      <input type="file" name="rg[]" accept="image/*" multiple required>
+    </p>
+    <small><strong><em>Envie uma ou mais fotos da frente do seu RG. O tamanho máximo de cada imagem é de 3MB.</em></strong></small>
+    <p><strong>Escolha uma cor favorita:</strong> <input type="color" name="cor" value="#ffffff"></p>
+<small><strong><em>Clique no quadrado para abrir uma paleta de cores e selecione a cor que você mais gosta.</em></strong></small>
+    <p><strong>Nível de inglês:</strong> <input type="range" name="ingles" min="1" max="5" step="1"></p>
+    <small><strong><em>Arraste o indicador para escolher seu nível de inglês de 1 a 5, sendo 1 o mais baixo e 5 o mais alto.</em></strong></small>
+    <p><strong>Escolaridade:</strong> 
+      <select name="escolaridade" required>
+        <option value="fundamental_concluido">Ensino Fundamental concluído</option>
+        <option value="fundamental_incompleto">Ensino Fundamental incompleto</option>
+        <option value="medio_concluido">Ensino Médio concluído</option>
+        <option value="medio_incompleto">Ensino Médio incompleto</option>
+        <option value="superior_concluido">Ensino Superior concluído</option>
+        <option value="superior_incompleto">Ensino Superior incompleto</option>
+        <option value="pos_concluido">Pós-Graduação concluída</option>
+        <option value="pos_incompleto">Pós-Graduação incompleta</option>
+      </select>
+    </p>
+    <small><strong><em>Escolha a opção que melhor descreve seu nível de escolaridade.</em></strong></small>
+    <p><strong>Fale um pouco sobre você:</strong> </p>
+    <small><strong><em>Digite um texto breve sobre seus interesses, hobbies, experiências, etc.</em></strong></small><br>
+    <textarea name="sobre" cols="30" rows="4"></textarea>
+  
+    <p><input type="checkbox" name="termos" required> Aceito os termos de uso dos dados.</p>
+    <small><strong><em>Marque esta caixa se você concorda com os termos de uso dos seus dados pessoais.</em></strong></small>
+  
+    <p><button type="submit">Enviar</button></p>
+  </form>
+  
+
+</body>
+</html>
