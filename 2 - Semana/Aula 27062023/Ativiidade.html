@@ -1,132 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Cadastre-se</title>
-  </head>
-  <body>
-    <form name="cadastro" action="#" method="post">
-      <fieldset>
-        <legend><h1>Cadastro</h1></legend>
-        <table align="center">
-          <tr>
-            <td><strong>Nome Completo:</strong></td>
-            <td>
-              <input
-                type="text"
-                name="nome"
-                maxlength="200"
-                placeholder="Digite seu nome completo"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Email:</strong></td>
-            <td>
-              <input
-                type="email"
-                name="email"
-                placeholder="Digite seu email"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Senha:</strong></td>
-            <td>
-              <input
-                type="password"
-                name="senha"
-                placeholder="Digite sua senha"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><strong>UF:</strong></td>
-            <td>
-              <input
-                type="text"
-                name="uf"
-                placeholder="Digite sua UF"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Cidade:</strong></td>
-            <td>
-              <input
-                type="text"
-                name="cidade"
-                placeholder="Digite sua cidade"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Rua:</strong></td>
-            <td>
-              <input
-                type="text"
-                name="rua"
-                placeholder="Digite sua rua"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Número:</strong></td>
-            <td>
-              <input
-                type="number"
-                name="numero"
-                placeholder="Digite o número da sua casa/apartamento"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><strong>CEP:</strong></td>
-            <td>
-              <input
-                type="text"
-                name="cep"
-                placeholder="Digite seu CEP"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Bio:</strong></td>
-            <td>
-              <textarea
-                name="bio"
-                cols="30"
-                rows="4"
-                placeholder="Digite uma breve biografia"
-              ></textarea>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Área de atuação:</strong></td>
-            <td>
-              <select name="area_atuacao">
-                <option value="" disabled selected>Selecione uma opção</option>
-                <option value="fullstack">Fullstack</option>
-                <option value="cloud">Cloud</option>
-                <option value="ambos">Ambos</option>
-              </select>
-            </td>
-          </tr>
-        </table>
-      </fieldset>
-      <br />
-      <center>
-        <button type="submit">Cadastrar</button>
-        <button type="reset">Limpar</button>
-      </center>
-    </form>
-  </body>
+<html>
+<head>
+  <meta charset='utf-8'>
+</head>
+<body>
+  <h1>Login</h1>
+
+  <form name="login" action="#" method="post">
+    <table align="left">
+      <tr>
+        <td><strong>Email:</strong></td>
+        <td><input type="email" name="email" id="email" placeholder="Digite seu email"></td>
+      </tr>
+      <tr>
+        <td><strong>Senha:</strong></td>
+        <td><input type="password" name="senha" id="senha" placeholder="Digite sua senha"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="checkbox" name="lembrar" id="lembrar"> <label for="lembrar">Lembrar de mim</label></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit">Logar</button></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Não tem uma conta? <a href="Atividade_2.html" target="_blank"><button type="button">Cadastre-se</button></a></td>
+      </tr>
+    </table>
+  </form>
+  
+</body>
 </html>
